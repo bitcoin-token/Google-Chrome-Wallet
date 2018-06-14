@@ -1,0 +1,99 @@
+<div data-page="send" class="page">
+    <!-- Navigation Bar -->
+    <div class="navbar menu">
+        <div class="navbar-inner" style="background-color: rgb(255, 185, 1);">
+            <div class="left">
+                <a id="backSend" href="#" class="link">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+            <span style="margin-top: 7px;">
+                <img src="assets/img/icons/logo.png" alt="BTK Logo">
+            </span>
+            <div class="right"></div>
+        </div>
+    </div> 
+    <!-- Main Section -->
+    <div class="bigBlock">
+    <div class="card" style="margin-top: 20px;">
+         <div class="card-header my-card-header">
+            <i class="far fa-arrow-alt-circle-up" style="font-size: 25px; color: #666;"></i>
+            <span class="small-caps">new transaction</span> 
+            <a href="#" style="float: right; color: #666;" id="helpSend">
+                <i class="far fa-question-circle" style="font-size: 25px;"></i>
+            </a>
+        </div>
+        <div class="card-content my-card">
+            <div class="content-block" >
+                <div class="list-block">
+                    <ul id="addressSite">
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="far fa-address-book" style="font-size: 20px;"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title floating-label">Recipient address</div>
+                                    <div class="item-input">
+                                        <input type="text" name="recipient" id="recipient">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fas fa-coins" style="font-size: 20px;"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title floating-label" id="amountLabel">Amount</div>
+                                    <div class="item-input">
+                                        <input type="number" name="amount" id="amount" value="0" step="0" min="0">
+                                    </div>
+                                </div>
+                           </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="far fa-star" style="font-size: 20px;"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title floating-label">Currency</div>
+                                    <div class="item-input">
+                                        <select id="listOfCryptos" name="listOfCryptos" style="color:gray">
+                                            <option id="ETH" value="-2">ETH</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                             <div class="item-content">
+                                 <div class="item-media"><i class="fas fa-exchange-alt" style="font-size: 20px;"></i></div>
+                                 <div class="item-inner">
+                                     <div class="item-title floating-label" id="gasPriceLabel">Sending Gas Fee (market value set)</div>
+                                     <div class="item-input">
+                                         <input type="number" name="gasPrice" id="gasPrice" step="1" min="0" value="0">
+                                     </div>
+                                 </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fas fa-gas-pump" style="font-size: 20px;"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title floating-label">Gas amount (auto)</div>
+                                    <div class="item-input">
+                                        <input type="number" name="gasAmount" id="gasAmount" step="10" min="0" value="80000">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <br/>
+                <center>
+                    <a href="#" class="button button-fill button-raised" style="width: 30%;" id="doit" name="doit">Send</a>
+                </center>
+                <br/>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+ </div>
+ 

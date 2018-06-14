@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Bitcoin Token Chrome Wallet</title>
+    <link rel="shortcut icon" href="assets/img/icons/icon_48.png">
+    <link rel="stylesheet" href="assets/css/framework7.material.min.css">
+    <link rel="stylesheet" href="assets/css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,900">
+</head>
+   
+<body class="theme-orange" style="font-weight: normal;">
+    <div class="views tabs">
+        <div class="view tab view-main tab active">
+            <div class="pages">
+                <div data-page="index" class="page">
+                    <div class="page-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-overlay"></div>
+    <div class="panel panel-left panel-cover" style="background: rgb(255, 185, 1);">
+        <div class="topMenu">
+        <center>
+            <br/>
+            <img src="assets/img/icons/icon_128.png" style="vertical-align :middle; width: 100px;" alt="logo" />
+        </center>
+        </div>
+        <div class="list-block media-list" style="margin: 0;">
+            <ul>
+                <li style="border-bottom: 1px solid rgba(0,0,0,.12);">
+                    <a class="item-link item-content close-panel external smallFont" data-view=".view-main" id="actionLock" href="index.html">
+                        <div class="item-media">
+                            <i class="fa fa-lock" style="font-size: 14pt; margin-top: 4px; color: #4e3d0d;"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Lock</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="item-link item-content close-panel" data-view=".view-main" href="wallet.html" id="goToWallet">
+                        <div class="item-media">
+                            <i class="fa fa-wallet" style="font-size: 14pt; margin-top: 4px; color: #4e3d0d;"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Wallet</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="coinlab-widget">
+            <div style="font-family: Verdana, Tahoma, Arial, sans-serif; font-size: 10px; color: #C9C6BD; text-align: right; padding: 0; margin: 0; width: 250px;">
+                <iframe 
+                    class = "dark" 
+                    src = "https://coinlib.io/widget?type=single&theme=dark&coin_id=740137&pref_coin_id=1505" 
+                    width = "258" 
+                    height = "170" 
+                    scrolling = "auto" 
+                    marginwidth = "0" 
+                    marginheight = "0" 
+                    frameborder = "0" 
+                    border = "0" 
+                    style = "border: 0; margin: 0; padding: 0;">
+                </iframe>
+            </div>   
+        </div>
+    </div>
+
+    <script src="assets/js/design/framework7.min.js"></script>
+    <script src="assets/js/design/initf7.js"></script>
+
+    <!-- Essentials -->
+    <script src="assets/js/libs/web3.min.js"></script>
+    <script src="assets/js/libs/lightwallet.min.js"></script>
+
+    <!-- Design -->    
+    <script src="assets/js/design/jdenticon-1.8.0.min.js"></script>
+
+    <!-- Custom functions -->
+    <script src="assets/js/custom/utils.js"></script>
+    <script src="assets/js/custom/initweb3.js"></script>
+
+    <!-- Token-related -->
+    <script src="assets/js/custom/token.js"></script>
+    <script src="assets/js/custom/tokensPrices.js"></script>
+      
+    <!-- Some more libs -->
+    <script src="assets/js/libs/async.min.js"></script>
+    <script src="assets/js/libs/ethjs-abi.min.js"></script>
+    <script src="assets/js/libs/ethjs-signer.min.js"></script>
+    <script src="assets/js/libs/ethjs-account.min.js"></script>
+    <script src="assets/js/libs/aes.js"></script>
+    <script src="assets/js/libs/chance.min.js"></script>
+
+    <!-- Pages script -->
+    <script src="assets/js/pages/index.js"></script>
+    <script src="assets/js/pages/unlock.js"></script>
+    <script src="assets/js/pages/restore.js"></script>
+    <script src="assets/js/pages/wallet.js"></script>
+    <script src="assets/js/pages/address.js"></script>
+    <script src="assets/js/pages/send.js"></script>
+    
+    <script src="assets/js/libs/jquery-3.2.1.min.js"></script>
+  </body>
+</html>

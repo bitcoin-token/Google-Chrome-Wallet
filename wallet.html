@@ -1,0 +1,96 @@
+<div data-page="wallet" class="page">
+    <!-- Navigation Bar -->
+    <div class="navbar menu">
+        <div class="navbar-inner" style="background-color: rgb(255, 185, 1);">
+            <div class="left">
+                <a href="#" data-panel="left" class="link icon-only open-panel">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <span style="margin-top: 7px;">
+                <img src="assets/img/icons/logo.png" alt="BTK Logo">
+            </span>
+            <div class="right">
+                <a href="#" class="link icon-only" id="update">
+                    <i class="fa fa-sync"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Main Section -->
+    <div class="bigBlock">
+        <div class="card" style="margin-top: 20px;">
+            <div class="card-header my-card-header">
+                <i class="fas fa-hand-holding-usd" style="font-size: 25px; color: #666;"></i>
+                <span class="small-caps">Portfolio Balance</span>
+                <a href="#" style="float: right; color: #666;" id="helpBalance">
+                    <i class="far fa-question-circle" style="font-size: 25px;"></i>
+                </a>
+            </div>
+            <div class="card-content card-content-padding my-card">
+                <div class="content-block">
+                    <br/>
+                    <div style="width: 100%">
+                        <center style="font-size: 25pt; color: #525252">
+                            $<span id="totalDollars"></span>
+                        </center>
+                    </div>
+                </div>
+                <br/>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-top: 20px;">
+            <div class="card-header my-card-header">
+                <i class="far fa-list-alt" style="font-size: 25px; color: #666;"></i>
+                <center style="width: 75%">
+                    <div class="row no-gutter">
+                        <div class="col-100">
+                            <span class="small-caps">Accounts</span>
+                        </div>
+                    </div>
+                </center>
+                <a href="#" style="float: right; color: #666;" id="helpAccounts">
+                    <i class="far fa-question-circle" style="font-size: 25px;"></i>
+                </a>
+            </div>
+
+            <div class="card-content my-card">
+                <div class="tabs">
+                    <div id="tabAcc" class="tab active">
+                        <div class="list-block media-list">
+                            <ul id="addressesList"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <a href="#" data-popover=".popover-wallet" class="floating-button floating-button-to-popover open-popover" style="background-color: rgb(255, 185, 1);">
+        <i class="fas fa-plus" style="font-size: 20px;"></i>
+    </a>
+  
+    <div class="popover popover-wallet">
+        <div class="popover-inner">
+            <div class="list-block">
+                <ul>
+                    <li>
+                        <a href="#" class="item-content item-link" id="generateNewAddress">
+                            <div class="item-inner">
+                                <div class="item-title">Generate new address from seed.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item-content item-link" id="addPrivateKey">
+                            <div class="item-inner">
+                                <div class="item-title">Import address from private key.</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>  
+</div>

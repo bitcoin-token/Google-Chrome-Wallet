@@ -1,0 +1,146 @@
+<div data-page="address" class="page">  
+    <!-- Navigation Bar -->
+    <div class="navbar menu">
+        <div class="navbar-inner" style="background-color: rgb(255, 185, 1);">
+            <div class="left">
+                <a id="back" href="#" class="link">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+            <span style="margin-top: 7px;">
+                <img src="assets/img/icons/logo.png" alt="BTK Logo">
+            </span>
+            <div class="right">
+                <a href="#" class="link icon-only" id="updateAddress">
+                    <i class="fa fa-sync"></i>
+                </a>
+            </div>
+        </div>
+    </div> 
+    <!-- Main Section -->
+    <div class="bigBlock">
+        <div class="card" style="margin-top: 20px;">
+            <div class="card-header my-card-header">
+                <a href="#" style="color: #666;" id="helpAccount">
+                    <i class="far fa-question-circle" style="font-size: 25px;"></i>
+                </a> 
+                <div class="item-title small-caps" id="accountName"></div> 
+                <div style="width: 60px; float: right;" id="moreActions">
+                    <a href="#" style="color: #666; float: right; margin-left: 55px; margin-right: 5px;">
+                        <i class="fas fa-ellipsis-v" style="font-size: 20px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-content card-content-padding my-card">
+                <div class="content-block">
+                    <div class="list-block media-list">
+                        <ul id="addressSite">
+                            <li class="item-content" style="width: 100%">
+                                <div class="item-inner">
+                                    <div class="item-title-row"></div>
+                                    <div class="item-subtitle" style="font-size: 13px">
+                                        <div style="float: right;" id="copyPublicAddress">
+                                            <a href="#" style="color: #666; margin-right: 5px;">
+                                                <i class="far fa-clone"></i>
+                                            </a>
+                                        </div>
+                                        <span id="currentAddress"></span>
+                                        <br/>
+                                        <div style="margin-top: 5px; font-size: 15px">
+                                            <span id="balanceAccountUSD" style="color: #040303; float: right; margin-top: 5px; font-size: 18px"></span>
+                                            <div class="chip raised-chip" style="background-color: #ccc; box-shadow: 2px 2px 2px #777;">
+                                                <div class="chip-media raised-media"><img src="assets/img/logos/ethereum.png" /></div>
+                                                <div class="chip-label" style="color: #333;">
+                                                    <span id="balanceAddressETH"></span> ETH
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="margin-top: 20px;">
+            <div class="card-header my-card-header">
+                <i class="fas fa-coins" style="font-size: 25px; color: #666;"></i>
+                <center style="width: 85%">
+                <div class="row no-gutter">
+                    <div class="col-50">
+                        <a href="#tab1" id="showSend" class="tab-link active button" style="color: #666; border-right: 1px solid gray; margin-right: 0px;">BTK tokens</a>
+                    </div>
+                    <div class="col-50">
+                        <a href="#tab2" id="hideSend" class="tab-link button" style="color: #666; border-left: 1px solid gray; margin-left: 0px;">transfers</a>
+                    </div>
+                </div>
+                </center>
+                <a href="#" style="float: right; color: #666;" id="helpTokens">
+                    <i class="far fa-question-circle" style="font-size: 25px;"></i>
+                </a>
+            </div>
+            <div class="card-content my-card">
+                <div class="tabs">
+                    <div id="tab1" class="tab active">
+                        <div class="list-block media-list"> 
+                            <ul id="tokensList">
+                                <li class="swipeout" style="width: 100%;">
+                                    <div class="swipeout-content">
+                                        <div class="item-content">
+                                            <div class="item-media" id="mediaimage" style="margin-top: 2px;">
+                                                <img src="assets/img/icons/icon_48.png">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title" style="margin-bottom: 5px;">
+                                                    <span id="balances"></span>
+                                                    <br>
+                                                    <span class="badge">BTK</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="border-top: 1px solid #eee;">
+                                            <a href="#" class="button button-fill button-raised" id="sendBTK" style="margin: 7px">
+                                                <i class="fa fa-send" style="margin-right: 3px;"></i> Send BTK
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab">
+                        <div class="list-block media-list"> 
+                            <ul id="pendingTxsList"></ul>
+                        </div>
+
+                        <div class="list-block media-list"> 
+                            <ul id="txsList"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <a href="#" data-popover=".popover-address" class="floating-button floating-button-to-popover open-popover" id="showAddButton">
+        <i class="icon icon-plus"></i>
+    </a>
+  
+    <div class="popover popover-address">
+        <div class="popover-inner">
+            <div class="list-block">
+                <ul>
+                    <li>
+                        <a href="#" class="item-content item-link" id="addToken">
+                            <div class="item-inner">
+                                <div class="item-title">Activate BTK for this ETH address.</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>   

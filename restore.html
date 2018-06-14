@@ -1,0 +1,88 @@
+<div data-page="restore" class="page">
+    <!-- Navigation Bar -->
+    <div class="navbar menu">
+        <div class="navbar-inner" style="background-color: rgb(255, 185, 1);">
+            <div class="left">
+                <a id="backRestore" href="#" class="link">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+            <span style="margin-top: 7px;">
+                <img src="assets/img/icons/logo.png" alt="BTK Logo">
+            </span>
+            <div class="right"></div>
+        </div>
+    </div> 
+    <!-- Main Section -->
+    <div class="bigBlock">
+        <div class="card" style="margin-top: 25px;">
+            <div class="card-header my-card-header">
+                <i class="fas fa-wallet" style="font-size: 25px; color: #666;"></i>
+                <span class="small-caps">
+                    <strong>new btk wallet</strong>
+                </span> 
+                <a href="#" style="float: right; color: #666;" id="helpRestore">
+                    <i class="far fa-question-circle" style="font-size: 25px;"></i>
+                </a>
+            </div>
+            <div class="card-content card-content-padding my-card">
+                <div class="content-block">
+                    <form id="form-connexion">
+                        <br/>
+                        <div class="list-block">
+                            <ul>
+                                <li class="align-top">
+                                    <div class="item-content">
+                                        <div class="item-media" style="margin-bottom: 90px;"><i class="fas fa-user-lock" style="font-size: 20px;"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Your seed</div>
+                                            <div class="item-input">
+                                                <textarea name="seed" id="seed" placeholder="Type your 12 words seed here"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="fas fa-key" style="font-size: 20px;"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title floating-label">New password</div>
+                                            <div class="item-input">
+                                                <input type="password" name="newpassword" id="newpassword">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="fas fa-key" style="font-size: 20px;"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title floating-label">Confirm password</div>
+                                            <div class="item-input">
+                                                <input type="password" name="confirmpassword" id="confirmpassword">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <p>
+                                <hr/>
+                                <center>
+                                    <em style="font-size: 10pt; color: #333;">Be sure to <strong>write down</strong> your seed.<br/>
+                                    Your current wallet will be erased.</em>
+                                </center>
+                                <hr/>
+                                <br/>
+                                <center>
+                                    <a href="#" class="button button-fill button-raised" style="width: 30%; background-color: rgb(255, 185, 1); color: #333;" id="restore">Create</a>
+                                </center>
+                                <br/>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
